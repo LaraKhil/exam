@@ -85,7 +85,7 @@ body{
 }
 
 .main-wrapper{
-    min-height:calc(100vh - 8vh);
+    min-height:calc(100vh - 12vh);
 }
 
 
@@ -304,6 +304,10 @@ span{
         margin-top: 0.5rem;
     }
 
+    .main-wrapper{
+        min-height:calc(100vh - 9vh);
+    }
+
     /* PhotoApp */
 
     .photoApp{
@@ -436,6 +440,10 @@ span{
         font-size: 40px;
     }
 
+    .main-wrapper{
+        min-height:calc(100vh - 9vh);
+    }
+
     /* PhotoApp */
 
     .photoApp{
@@ -560,6 +568,10 @@ span{
         font-size: 25px;
     }
 
+    .main-wrapper{
+        min-height:calc(100vh - 14vh);
+    }
+
     /* PhotoApp */
 
 
@@ -650,4 +662,10 @@ span{
     }
     
 
+}
+
+@media screen and (min-width:992px){
+    .main-wrapper{
+        min-height:calc(100vh - 12vh);
+    }
 }
