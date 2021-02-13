@@ -76,16 +76,14 @@ body{
        object-fit: cover;
 }
 
-.navbar-section{
-    min-height:8vh;
-}
+
 
 .nav-wrapper{
     width: 100%;
 }
 
 .main-wrapper{
-    min-height:calc(100vh - 12vh);
+    min-height:90vh;
 }
 
 
@@ -300,12 +298,12 @@ span{
     }
 
     .logo-white{
-        width: 34px;
+        width: 39px;
         margin-top: 0.5rem;
     }
 
-    .main-wrapper{
-        min-height:calc(100vh - 9vh);
+    .main-btn{
+        font-size: 38px;
     }
 
     /* PhotoApp */
@@ -440,10 +438,6 @@ span{
         font-size: 40px;
     }
 
-    .main-wrapper{
-        min-height:calc(100vh - 9vh);
-    }
-
     /* PhotoApp */
 
     .photoApp{
@@ -569,7 +563,7 @@ span{
     }
 
     .main-wrapper{
-        min-height:calc(100vh - 14vh);
+        min-height:85vh;
     }
 
     /* PhotoApp */
@@ -664,8 +658,3 @@ span{
 
 }
 
-@media screen and (min-width:992px){
-    .main-wrapper{
-        min-height:calc(100vh - 14vh);
-    }
-}
