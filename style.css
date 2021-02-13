@@ -548,10 +548,14 @@ span{
     }
 
     .custom-h2{
-        font-size: 22px;
+        font-size: 18px;
         letter-spacing: 0.4s;
         text-align: left;
         margin: 0 ; 
+    }
+
+    .nav-h2{
+        font-size: 17px;
     }
 
  
