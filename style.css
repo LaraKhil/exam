@@ -86,6 +86,13 @@ body{
     min-height:90vh;
 }
 
+.nav-h2{
+    transition:all .3s linear;
+}
+.nav-h2:hover{
+    color:var(--bg-green);
+}
+
 
 
 .style-link{
@@ -555,7 +562,7 @@ span{
     }
 
     .nav-h2{
-        font-size: 17px;
+        font-size: 16px;
     }
 
  
@@ -600,10 +607,6 @@ span{
         font-size: 22px;
     }
     
-    .custom-h2-design{
-        margin-top: 10%;
-    }
-
     .custom-p--design{
         width: 100%;
     }
@@ -662,3 +665,26 @@ span{
 
 }
 
+@media screen and (min-width:992px){
+
+    /* General */
+    .custom-p--download{
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .custom-p--design{
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .custom-p--app{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .custom-h2--app{
+        width: 50%;
+    }
+
+}
