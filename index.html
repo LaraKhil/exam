@@ -25,29 +25,30 @@
                             <i class="fas fa-bars"></i>
                         </div>
                     </div>
-                    <div class="row mx-auto d-none d-md-flex">
-                        <ul class="d-flex justify-content-center align-items-center mx-auto bg-transparent nav-wrapper mt-3 p-0 ">
-                            <li class="nav-link col-2 col-md-2 p-0"> 
-                                <a class="style-link text-white" href="#home">
-                                    <h2 class="custom-h2 nav-h2 text-uppercase m-0 text-center ">Home</h2>
-                                </a>
-                            </li>
-                            <li class="nav-link col-2 col-md-2 p-0">
-                                <a  class="style-link text-white" href="#photoApp">
-                                    <h2 class="custom-h2 nav-h2 text-uppercase m-0 text-center">photoApp</h2>
-                                </a>
-                            </li>
-                            <li class="nav-link col-2 col-md-2 px-0 py-2 text-center mx-auto">
+                    <div id="bars-section" class="bars-section">
+                        <button class="close-modal col-2"><i class="fas fa-times"></i></button>
+                        <ul class="nav-wrapper  mx-auto row p-0 m-0">
+                            <li class="nav-link col-12 px-0  text-center mx-auto">
                                 <img  class="style-link text-center" src="./img/whiteCamera.png" alt="Brend Logo">
                             </li>
-                            <li class="nav-link col-2 col-md-2 p-0">
-                                <a  class="style-link text-white" href="#design">
+                            <li class="nav-link col-12 "> 
+                                <a id="anchor" class="style-link text-white w-100" href="#home">
+                                    <h2 class="custom-h2 nav-h2 text-uppercase  text-center ">Home</h2>
+                                </a>
+                            </li>
+                            <li class="nav-link col-12 ">
+                                <a id="anchor"  class="style-link text-white" href="#photoApp">
+                                    <h2 class="custom-h2 nav-h2 text-uppercase  m-0 text-center">photoApp</h2>
+                                </a>
+                            </li>
+                            <li class="nav-link col-12 ">
+                                <a id="anchor"  class="style-link text-white" href="#design">
                                     <h2 class=" custom-h2 nav-h2 text-uppercase m-0 text-center">design</h2>
                                 </a>
                             </li>
-                            <li class="nav-link col-2 col-md-2 p-0">
-                                <a  class="style-link text-white" href="#download">
-                                    <h2 class=" custom-h2 nav-h2 text-uppercase m-0 text-center">dowload</h2>
+                            <li class="nav-link col-12 ">
+                                <a id="anchor"  class="style-link text-white" href="#download">
+                                    <h2 class=" custom-h2 nav-h2 text-uppercase m-0 text-center">download</h2>
                                 </a>
                             </li>
                         </ul>
@@ -170,10 +171,20 @@
                     <h2 class="custom-h2 custom-h2-our text-white ">
                         SUBSCRIBE TO OUR COMMUNITY
                     </h2>
-                    <form action="get" class="d-flex justify-content-center" required>
+                    <form id="form" action="get" class="d-flex justify-content-center" required>
                         <input class="input" type="email" name="email" placeholder="YOUR EMAIL">
                         <button area-lable="Submit" class="input-btn m-0" type="submit"><i class="fas fa-check"></i></button>
                     </form>
+                </div>
+                <div class="form-modal">
+                    <div class="modal-flex-container">
+                        <div class="modal-window">
+                            <h2 class="custom-h2-modal text-center">Sorry, we are out of service</h2>
+                            <div class="buttons-wrapper d-flex flex-row justify-content-end">
+                                <button class="btn-modal-ok modal-btn text-white">ok</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,21 +195,26 @@
                     <p class="custom-p custom-p--download mx-auto ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis quaerat veritatis quidem est quos voluptates sapiente ut fugiat, quod magnam ducimus aut, natus dolore vero alias non quo nostrum autem. Nisi mollitia fugiat</p>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="download-style col-9 col-md-5 col-lg-4 d-flex flex-row justify-content-between align-items-center p-0 ">
+                    <div class="download-style test-dow col-9 col-md-5 col-lg-4 d-flex flex-row justify-content-between align-items-center p-0 ">
                         <h2 class="custom-h2 custom-h2--download text-white text-uppercase m-0 ps-2" >Apple Store</h2>
-                        <a class="download-btn position-relative text-white" href="https://www.apple.com/" target="_blank">
-                            <i class="fab fa-apple position-absolute top-50 start-50 translate-middle"></i>
-                        </a>
+                        <button type="button" id="GetFile" class="btn-icon">
+                            <i class="fab fa-apple"></i>
+                        </button>
+                        <p class="test" >By pressing on button you will download file on your computer</p>
                     </div>
                     <div class="download-style col-9 col-md-5 col-lg-4 d-flex flex-row justify-content-between align-items-center p-0">
                         <h2 class="custom-h2 custom-h2--download text-white text-uppercase m-0 ps-2">Play Market</h2>
-                        <a class="download-btn position-relative text-white" href="https://play.google.com/" target="_blank">
-                            <i class="fab fa-android position-absolute top-50 start-50 translate-middle"></i>
-                        </a>
+                        <button type="button" id="GetFile2" class="btn-icon">
+                            <i class="fab fa-android"></i>
+                        </button>
                     </div>
+                    
                 </div>
             </div>
         </section>
+        <progress id="progress" value="0"></progress>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
     </main>
     
 </body>
